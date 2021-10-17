@@ -1,0 +1,96 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Barlow', sans-serif;
+  line-height: 1.3;
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+}
+
+button, .button {
+  padding: 16px 22px;
+  border: 0;
+  border-radius: 50px;
+  font-family: 'Fraunces', serif;
+  cursor: pointer;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+button:hover, .button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: white;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex_jc_sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex_jc_c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex_ai_c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header {
+  position: relative;
+}
+
+.header nav {
+  background-color: deepskyblue;
+  padding: 24px;
+}
+
+.header_links a {
+  padding: 12px;
+  color: white;
+  font-size: 1.125rem;
+  display: inline-block;
+  position: relative;
+}
+
+.header_links a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: white;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  left: 50%;
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.header_links a:hover::after {
+  width: 100%;
+  left: 0;
+}
+/*# sourceMappingURL=style.css.map */

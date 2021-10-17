@@ -1,0 +1,38 @@
+.header {
+    position: relative;
+
+    nav {
+        background-color: $navBG;
+        padding: 24px;
+    }
+
+    &_links {
+
+        a {
+            padding: 12px;
+            color: $white;
+            font-size: $font-med;
+            display: inline-block;
+            position: relative;
+
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                background: $white;
+                bottom: 0;
+                height: 2px;
+                width: 0;
+                left: 50%;
+                transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            }
+
+            &:hover::after {
+                width: 100%;
+                left: 0;
+            }
+        }
+
+    }
+
+}
