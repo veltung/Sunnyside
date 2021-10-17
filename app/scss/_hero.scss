@@ -1,0 +1,34 @@
+.hero {
+    position: relative;
+    
+    &_bg {
+        position: relative;
+        background-image: url(/images/desktop/image-header.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 656px;
+
+        @include breakpoint-down(medium) {
+            max-height: 400px;
+            background-position: center 70%;
+        }
+
+        @include breakpoint-down(small) {
+            background-image: url(/images/mobile/image-header.jpg);
+            max-height: 280px;
+        }
+    }
+
+    &_content {
+        position: absolute;
+        width: 100%;
+        height: 90%;
+        flex-direction: column;
+        text-align: center;
+        
+        &_text {
+            text-transform: uppercase;
+        }
+    }
+}

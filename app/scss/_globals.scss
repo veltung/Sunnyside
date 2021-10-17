@@ -32,6 +32,13 @@ button, .button {
     }
 }
 
+h1 {
+    font-family: 'Fraunces', serif; 
+    font-size: $font-xBig;
+    color: $white;
+    letter-spacing: 5px;
+}
+
 .flex {
     display: flex;
 
