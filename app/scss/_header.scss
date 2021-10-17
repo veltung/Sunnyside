@@ -1,5 +1,6 @@
 .header {
     position: relative;
+    z-index: 1;
 
     nav {
         background-color: $navBG;
@@ -82,7 +83,7 @@
 
     &_mobileContainer {
         position: absolute;
-        width: calc(100% - 48px);
+        width: 90%;
         left: 50%;
         transform: translateX(-50%);
         padding: 24px;
@@ -93,8 +94,8 @@
         width: 100%;
         left: 50%;
         transform: translateX(-50%);
-        border-top: 24px solid $white;
-        border-right: 24px solid $navBG;
+        border-top: 24px solid $navBG;
+        border-right: 24px solid $white;
     }
 
     &_mobileMenu {
@@ -103,12 +104,13 @@
         left: 50%;
         transform: translate(-50%, 24px);
         text-align: center;
-        background-color: $navBG;
+        background-color: $white;
+        padding: 24px;
 
         a {
             display: block;
             padding: 24px;
-
+            color: $vDarkGrayBlue;
         }
 
         button {
