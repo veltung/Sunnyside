@@ -39,6 +39,19 @@ h1 {
     letter-spacing: 5px;
 }
 
+h2 {
+    font-family: 'Fraunces', serif; 
+    font-size: $font-big;
+    font-weight: $fraunces_med;
+    color: $darkBlue;
+}
+
+p {
+    font-size: $font-med;
+    font-weight: $barlow_med;
+    color: $grayBlue;
+}
+
 .flex {
     display: flex;
 

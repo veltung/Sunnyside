@@ -7,7 +7,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-        height: 656px;
+        height: 660px;
 
         @include breakpoint-down(medium) {
             max-height: 400px;
@@ -16,7 +16,7 @@
 
         @include breakpoint-down(small) {
             background-image: url(/images/mobile/image-header.jpg);
-            max-height: 280px;
+            max-height: 355px;
         }
     }
 
@@ -29,6 +29,14 @@
         
         &_text {
             text-transform: uppercase;
+            
+            @include breakpoint-down(small) {
+                max-width: 245px;
+                letter-spacing: 1px;
+                font-size: $font-big;
+            }
         }
+
+        
     }
 }
